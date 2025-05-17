@@ -462,7 +462,7 @@ CONFIG_H += $(PLATFORM_COMMON_DIR)/config.h
 ASFLAGS  += $(SHARED_ASFLAGS) $(TOOLCHAIN_ASFLAGS)
 
 # C Compiler flags
-CFLAGS   += $(SHARED_CFLAGS) $(TOOLCHAIN_CFLAGS)
+CFLAGS   += $(SHARED_CFLAGS) $(TOOLCHAIN_CFLAGS) -I$(ROOT_DIR)/lib/pico-sdk/src/common/pico_stdlib/include
 
 # C++ Compiler flags
 CXXFLAGS += $(CFLAGS) $(SHARED_CXXFLAGS) $(TOOLCHAIN_CXXFLAGS) -fno-rtti

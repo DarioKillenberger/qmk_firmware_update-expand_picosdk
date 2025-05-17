@@ -6,6 +6,7 @@
 #include "gpio.h"
 #include "wait.h"
 #include "pico/bootrom.h"
+#include "pico/runtime_init.h"
 
 #if !defined(RP2040_BOOTLOADER_DOUBLE_TAP_RESET_LED)
 #    define RP2040_BOOTLOADER_DOUBLE_TAP_RESET_LED_MASK 0U
